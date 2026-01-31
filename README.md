@@ -1,66 +1,59 @@
-# TestingBudgetPY — проект по автоматизированному тестированию (pytest)
+# TestingBudgetPY — Automated Testing Project (pytest)
 
-BudgetPy — консольное Python-приложение для управления личным бюджетом.
-Данный репозиторий посвящён **автоматизированному тестированию** приложения с использованием **pytest** и демонстрирует полный QA-процесс.
+**TestingBudgetPY** is an automated testing project for a console-based Python application that manages a personal budget.  
+The repository demonstrates a complete **QA Automation workflow** using **pytest**.
 
-Проект создан в учебных и портфолио-целях для демонстрации навыков QA Automation.
-
----
-
-## Описание приложения
-
-Приложение поддерживает следующие функции:
-- управление балансом пользователя;
-- учёт доходов и расходов;
-- категории транзакций;
-- цели накоплений (копилки);
-- сохранение и загрузку данных в JSON-файле.
+The project focuses on testing business logic, data persistence, and edge cases, and is intended for **educational and portfolio purposes**.
 
 ---
 
-## Область тестирования
+##  Tech Stack
 
-### Виды тестирования
+- **Programming Language:** Python 3.10+
+- **Testing Framework:** pytest
+- **Test Coverage:** pytest-cov
+- **Test Types:** unit, integration, negative, boundary testing
+- **Data Storage:** JSON
+- **Environment:** virtual environment (venv)
+- **Version Control:** Git, GitHub
 
-В рамках проекта реализованы:
-- модульное тестирование (Unit Testing);
-- интеграционное тестирование (Integration Testing);
-- негативное тестирование;
-- тестирование граничных значений.
+---
 
-### Покрытые модули
+## Application Overview
 
-| Модуль | Статус |
+The application provides the following functionality:
+- user balance management;
+- income and expense tracking;
+- transaction categorization;
+- savings goals management;
+- data persistence using JSON files.
+
+---
+
+## Testing Scope
+
+### Types of Testing
+
+The project includes:
+- Unit testing;
+- Integration testing;
+- Negative testing;
+- Boundary value testing.
+
+### Covered Modules
+
+| Module | Status |
 |------|------|
-| Account (баланс) | Протестирован |
-| Transactions | Протестирован |
-| Categories | Протестирован |
-| Savings | Протестирован |
-| JSON Storage | Протестирован |
-| Сохранение состояния | Протестировано |
+| Account (balance) | Tested |
+| Transactions | Tested |
+| Categories | Tested |
+| Savings | Tested |
+| JSON Storage | Tested |
+| State persistence | Tested |
 
 ---
 
-## Документация
-
-Подробная QA-документация проекта находится в каталоге `docs/`:
-
-- `docs/requirements.md` — функциональные и интеграционные требования;
-- `docs/test_plan.md` — план тестирования;
-- `docs/test_conclusion.md` — заключение по результатам тестирования.
-
----
-
-## Инструменты и технологии
-
-- Python 3.10+
-- pytest
-- pytest-cov
-- виртуальное окружение (venv)
-
----
-
-## Структура проекта
+## Project Structure
 
 ```text
 TestingBudgetPY/
